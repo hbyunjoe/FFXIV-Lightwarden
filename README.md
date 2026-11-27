@@ -117,6 +117,12 @@ Lightwarden includes or is based on the following third-party work. Their licenc
 - **FAST noise textures** (EA SEED, Electronic Arts): BSD 3-Clause. [Notice](licenses/THIRD-PARTY-LICENSE-FastNoise.txt)
 - **FFXIV-NativeDoF** (SirenBrink), whose memory layout Lightwarden uses to read the game's depth of field: MIT. [Notice](licenses/THIRD-PARTY-LICENSE-NativeDoF.txt)
 
+## AI disclosure
+
+Lightwarden's code was written with the help of AI (Anthropic's Claude). The look, the design decisions, the testing and every judgement about what stays and what goes are mine. No AI-generated art is used anywhere: the banner, screenshots and videos are made by me from the game itself.
+
+The one feature that uses a machine-learning model at runtime is lip sync, which works out mouth movement from the game's voice lines with NVIDIA Audio2Face. It animates the game's existing faces; it doesn't create any images.
+
 ## Disclaimer
 
 Lightwarden is an unofficial, fan-made project. It is not affiliated with or endorsed by Square Enix. Third-party tools are against the game's terms of service; use it at your own risk. It changes only how the game looks on your own screen.
