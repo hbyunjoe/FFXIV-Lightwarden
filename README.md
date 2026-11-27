@@ -94,8 +94,6 @@ Lightwarden's code is its own, but it stands on published work. The main ones:
 
 ## Acknowledgements
 
-Lightwarden wouldn't exist without the people who inspired it:
-
 - **Boris Vorontsov**, creator of ENBSeries, which I've used across GTA, Skyrim, Fallout and more, for showing the world what's possible.
 - **l00ping**, for Natural and Atmospheric Tamriel (NAT and NAT.ENB).
 - **NovaKDalton and JawZ**, for Relighting Skyrim.
