@@ -10,7 +10,7 @@ Fair warning: it requires capable hardware. For perspective, I've targeted 30 fp
 
 ## Comparisons
 
-Each clip switches between the vanilla game and Lightwarden. Lightwarden only: no post-processing or DLSS 5 NR.
+Each GIF shows vanilla and Lightwarden. Lightwarden only: no post-processing or DLSS 5 NR.
 
 <img src="images/comparison-gridania-house.gif" alt="Vanilla and Lightwarden compared: a house in the Black Shroud" width="100%">
 
