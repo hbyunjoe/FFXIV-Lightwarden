@@ -103,8 +103,6 @@ Lightwarden works inside a game that wasn't built for any of this, with real-tim
 - **Game patches** can break parts of Lightwarden until it's updated.
 - **Hardware:** developed and tested only on an nVidia RTX 4090. All other cards, nVidia or otherwise are untested.
 
-Lightwarden is a hobby project, shared as is. There'll be limited if any support, and bug reports and requests may not get an answer.
-
 ## References
 
 Lightwarden's code is its own, but it stands on published work. The main ones:
@@ -153,4 +151,5 @@ The one feature built on a machine-learning model is lip sync: nVidia Audio2Face
 
 ## Disclaimer
 
+Lightwarden is a hobby project, originally made for personal use so is shared as is. There'll be limited if any support, and bug reports and requests may not get an answer.
 Lightwarden is an unofficial, fan-made project. It is not affiliated with or endorsed by Square Enix. Third-party tools are against the game's terms of service; use it at your own risk. It changes only how the game looks on your own screen.
