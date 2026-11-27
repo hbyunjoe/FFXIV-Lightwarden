@@ -8,6 +8,16 @@ Fair warning: it requires capable hardware. For perspective, I've targeted 30 fp
 
 **Status: in development.**
 
+## Comparisons
+
+Each clip switches between the vanilla game and Lightwarden.
+
+<img src="images/comparison-gridania-house.gif" alt="Vanilla and Lightwarden compared: a house in the Black Shroud" width="100%">
+
+<img src="images/comparison-gridania-path.gif" alt="Vanilla and Lightwarden compared: a character on a forest path" width="100%">
+
+<img src="images/comparison-costa-del-sol.gif" alt="Vanilla and Lightwarden compared: a character by the sea at Costa del Sol" width="100%">
+
 ## Key features
 
 - **Lighting:** soft sun and lamp shadows that sharpen near contact (PCSS, contact shadows), ambient occlusion (visibility bitmask), bounce light (screen-space global illumination with probe-based lamp bounce), and lamps that actually light the rooms they're in (baked shadows for every lamp, light from glowing scenery)
