@@ -1,6 +1,6 @@
 # Lightwarden
 
-A graphics overhaul for Final Fantasy XIV. Lightwarden replaces and extends parts of the game's rendering to give it a more modern look, in the spirit of what ENB did for Skyrim, without replacing the game's textures or models.
+Lighting is incredibly important; Lightwarden is a graphics overhaul for Final Fantasy XIV. Unlike traditional Reshade shaders or presets, this doesn't work solely with the final image, instead it replaces and extends parts of the game's rendering pipeline to give it a more modern look, in the spirit of what ENB did for Skyrim, without replacing the game's textures or models.
 
 **Status: in development.**
 
