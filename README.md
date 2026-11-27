@@ -9,7 +9,7 @@ Fair warning: it needs very modern hardware. For perspective, I've targeted 30 f
 ## Key features
 
 - **Lighting:** soft sun and lamp shadows that sharpen near contact (PCSS, contact shadows), ambient occlusion (visibility bitmask), bounce light (screen-space global illumination with probe-based lamp bounce), and lamps that actually light the rooms they're in (baked shadows for every lamp, light from glowing scenery)
-- **Atmosphere:** volumetric fog and light shafts (froxel-based), ground mist that moves round you, volumetric clouds, dust motes in the light, darker nights
+- **Atmosphere:** volumetric fog and light shafts (froxel-based), ground mist that reacts, volumetric clouds, particle effects such as dirt, dust motes in the light, darker nights
 - **Water:** planar and screen-space reflections, waves that follow the weather and wind, wakes, ripples and caustics
 - **Characters:** skin with subsurface scattering (Burley diffusion) and light through thin parts like ears, eye shading, softer hair shadows, foot inverse kinematics, and lip sync: mouths that follow the actual voice lines in cutscenes, worked out from the audio with NVIDIA Audio2Face (English voices)
 - **Weather:** its own falling snow, wet surfaces and puddles, snow on surfaces, wind through grass and trees
