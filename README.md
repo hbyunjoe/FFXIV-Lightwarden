@@ -10,7 +10,7 @@ Fair warning: it needs very modern hardware. For perspective, I've targeted 30 f
 
 - **Lighting:** soft sun and lamp shadows that sharpen near contact (PCSS, contact shadows), ambient occlusion (visibility bitmask), bounce light (screen-space global illumination with probe-based lamp bounce), and lamps that actually light the rooms they're in (baked shadows for every lamp, light from glowing scenery)
 - **Atmosphere:** volumetric fog and light shafts (froxel-based), ground mist that reacts, volumetric clouds, particle effects such as dirt, dust motes in the light, darker nights
-- **Water:** planar and screen-space reflections, waves that follow the weather and wind, wakes, ripples and caustics
+- **Water:** hybrid planar and screen-space reflections, waves that follow the weather and wind, wakes, ripples and caustics
 - **Characters:** skin with subsurface scattering (Burley diffusion) and light through thin parts like ears, eye shading, softer hair shadows, foot inverse kinematics, and lip sync: mouths that follow the actual voice lines in cutscenes, worked out from the audio with NVIDIA Audio2Face (English voices)
 - **Weather:** its own falling snow, wet surfaces and puddles, snow on surfaces, wind through grass and trees
 - **Camera:** a choice of tonemappers (AgX, GT7, an ACES fit, film LUTs) with auto exposure and HDR10 output, a physically based lens flare that follows the aperture, bloom, halation, diffusion, chromatic aberration, lens dirt, film grain and motion blur
@@ -65,7 +65,7 @@ Lightwarden works inside a game that wasn't built for any of this, with real-tim
 
 - **Depth of field:** blurred backgrounds can show a faint halo or soft fringe around sharp subjects, most visibly round hair and at the edges of characters. This is the limit of any real-time depth of field that works from the picture; only ray-traced or path-traced depth of field avoids it. For GPose stills, the stacked depth of field gives true lens blur without it.
 - **Bounce light is mostly screen-space:** light bounces off what's on screen. Bright surfaces just out of view or behind you don't light the scene, so bounce light can change a little as you turn the camera. Lamps use their own baked bounce, which doesn't have this problem.
-- **Reflections:** screen-space reflections can only show what's on screen. Large water uses a true mirror reflection, but things the game doesn't draw (off-screen, or hidden behind other things) can still be missing; Lightwarden fills those gaps from remembered scenery, screen-space reflections and the sky.
+- **Reflections:** screen-space reflections can only show what's on screen. Large water uses a true mirror reflection, but things the game doesn't draw (off-screen, or hidden behind other things) can still be missing and flicker; Lightwarden does its best to fill those gaps from remembered scenery, screen-space reflections and the sky.
 - **Spell effects** are flat glowing images to the game, not lights. They light their surroundings, but they don't cast proper shadows or shafts through the fog.
 - **Materials:** the game doesn't say what a surface is made of, so looks tied to a material (velvet, lacquer, brushed metal and so on) are limited.
 - **Lip sync** covers English voice lines in cutscenes, and only lines that have been baked. Creatures and other non-human faces keep the game's own mouth movement.
