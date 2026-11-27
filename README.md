@@ -20,7 +20,7 @@ Lightwarden has three parts. Each does a different job, and they talk to each ot
 
 ### 1. The ReShade add-on: the engine
 
-This is where most of the work happens. The add-on sits inside the game's drawing and watches every step of a frame as the game builds it. It recognises the game's own rendering passes, and then either swaps in Lightwarden's version or adds new passes of its own. The shadows, ambient occlusion, bounce light, fog, clouds, water, skin and falling snow are all drawn here, in the middle of the frame, with the same information the game itself has: depth, surface direction, materials and the scene's real light values. That is the difference from an ordinary ReShade preset, which can only work on the finished picture.
+This is where most of the work happens. The add-on sits inside the game's drawing and watches every step of a frame as the game builds it. It recognises the game's own rendering passes, and then either swaps in Lightwarden's version or adds new passes of its own. The shadows, ambient occlusion, bounce light, fog, clouds, water, skin and falling snow are all drawn here, in the middle of the frame, with the same information the game itself has: depth, surface direction, materials and the scene's real light values. A bit further than a ReShade preset, which usually only work on the finished image.
 
 ### 2. The ReShade effects: the camera and film
 
