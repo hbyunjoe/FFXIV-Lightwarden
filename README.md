@@ -18,6 +18,12 @@ Each GIF shows vanilla and Lightwarden. Lightwarden only: no post-processing or 
 
 <img src="images/comparison-costa-del-sol.gif" alt="Vanilla and Lightwarden compared: a character by the sea at Costa del Sol" width="100%">
 
+<img src="images/comparison-night-street.gif" alt="Vanilla and Lightwarden compared: a city street at night lit by lanterns" width="100%">
+
+<img src="images/comparison-plaza-snow.gif" alt="Vanilla and Lightwarden compared: a character in a stone plaza in light snow" width="100%">
+
+<img src="images/comparison-close-up.gif" alt="Vanilla and Lightwarden compared: a character close-up" width="100%">
+
 ## Key features
 
 - **Lighting:** soft sun and lamp shadows that sharpen near contact (PCSS, contact shadows), ambient occlusion (visibility bitmask), bounce light (screen-space global illumination with probe-based lamp bounce), and lamps that actually light the rooms they're in (baked shadows for every lamp, light from glowing scenery)
