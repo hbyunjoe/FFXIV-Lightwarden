@@ -83,11 +83,16 @@ Also, there's everyone's favorite modern AAA feature, SHADER COMPILATION, that g
 1. Install the game as usual
 2. Install XIVLauncher
 3. Install Reshade with full add-on support
-4. Start the game and change these in-game settings:
-5. Open Dalamud
-6. Add this Repo
-7. reserved
-8. (Optional for HDR, DLAA, DLSS upscaling, DLSS-G, DLSS-NR): Install the Optiscaler fork
+4. Copy the Reshade files (.addon64 to the root game folder [where the .exe is], and all the .fx files to your Reshade Shaders folder)
+5. Start the game and change these in-game settings:
+6. Shadow Softening must be changed to Weak or Strong, avoid Strongest (why? because while Strongest is basically PCSS, the game draws lower res shadow maps at Strongest for some reason)
+7. Set Ambient Occlusion to GTAO
+8. Enable the vanilla game's Depth of Field (don't worry the DoF won't be doubled, we need it so Lightwarden can see the game's FoV values)
+10. Open Dalamud
+11. Add this Repo
+12. Restart the game
+13. reserved
+14. (Optional for HDR, DLAA, DLSS upscaling, DLSS-G, DLSS-NR): Install the Optiscaler fork
 
 ## Known limitations
 
