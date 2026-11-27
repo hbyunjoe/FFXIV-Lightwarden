@@ -12,6 +12,7 @@ A graphics overhaul for Final Fantasy XIV. Lightwarden replaces and extends part
 - **Characters:** skin with subsurface scattering (Burley diffusion) and light through thin parts like ears, eye shading, softer hair shadows, foot inverse kinematics, and lip sync that follows the voice lines (baked with NVIDIA Audio2Face)
 - **Weather:** its own falling snow, wet surfaces and puddles, snow on surfaces, wind through grass and trees
 - **Camera:** a choice of tonemappers (AgX, GT7, an ACES fit, film LUTs) with auto exposure and HDR10 output, a physically based lens flare that follows the aperture, depth of field that follows the game's cutscenes, bloom, halation, diffusion, chromatic aberration, lens dirt, film grain and motion blur
+- **A clean UI:** every effect is drawn before the game's interface, so the HUD, chat and nameplates stay sharp and untouched. No extra UI-masking add-on or shader (such as REST or KeepUI) is needed
 - **Presets:** save, share and switch between complete looks
 
 ## How it works
