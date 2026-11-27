@@ -40,6 +40,14 @@ Almost every feature is its own option, so you can choose what you pay for. Pres
 
 Also, there's a lot of everyone's favorite modern AAA feature, SHADER COMPILATION, that goes on during start and baking right after loading so expect some stutters or extended black screens here and there (should usually only be once per zone load but always at startup).
 
+## Requirements
+
+- Final Fantasy XIV on Windows, launched with XIVLauncher and Dalamud
+- ReShade with full add-on support
+- Optional, for HDR output and frame generation: OptiScaler
+
+## Installation Instructions
+
 ## Known limitations
 
 Lightwarden works inside a game that wasn't built for any of this, with real-time techniques that each have their limits. The main ones:
@@ -52,15 +60,9 @@ Lightwarden works inside a game that wasn't built for any of this, with real-tim
 - **Lip sync** covers English voice lines in cutscenes, and only lines that have been baked. Creatures and other non-human faces keep the game's own mouth movement.
 - **Rooms inside bigger zones:** inn rooms and other indoor zones switch off the outdoor fog and mist, but a room that's part of a larger outdoor zone may still show some.
 - **Game patches** can break parts of Lightwarden until it's updated. A diagnostics page lists which features a patch has affected.
-- **Hardware:** developed and tested only on an NVIDIA RTX 4090. AMD and Intel cards are untested; reports are welcome.
+- **Hardware:** developed and tested only on an NVIDIA RTX 4090. AMD and Intel cards are untested.
 
-## Requirements
-
-- Final Fantasy XIV on Windows, launched with XIVLauncher and Dalamud
-- ReShade with full add-on support
-- Optional, for HDR output and frame generation: OptiScaler
-
-## Installation Instructions
+Lightwarden is a hobby project, shared as is. There's no support, and bug reports and requests may not get an answer.
 
 ## References
 
