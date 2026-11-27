@@ -50,6 +50,10 @@ Also, there's a lot of everyone's favorite modern AAA feature, SHADER COMPILATIO
 
 - REST and KeepUI may conflict with what Lightwarden already does. Disable/delete them before installing
 - BetterShadows conflicts with Lightwarden so disable/delete before installing.
+- Penumbra mods that replace the game's shader files (some skin, hair and body mods) can stop Lightwarden's features working on what those shaders draw. Texture and model mods are fine.
+- Other HDR or tonemap mods (such as RenoDX) replace the same part of the frame. Use one or the other.
+- ReShade effects that do their own lighting from depth (ray-traced GI, MXAO and other ambient occlusion, other depth of field) will double up with Lightwarden's. Turn them off.
+- GShade isn't supported; Lightwarden needs ReShade with full add-on support.
 
 ## Installation Instructions
 
