@@ -6,7 +6,7 @@ Originally just a study of tech art, Lightwarden is a graphics overhaul for Fina
 
 Fair warning: it requires capable hardware. For perspective, I've targeted 30 fps on an RTX 4090 at 3440×1440 with DLAA. That being said, turning off/lowering features and using things like DLSS upscaling, you can win back a some performance.
 
-**Status: in development.**
+**Status: 90%; feature complete, fixing visual bugs, and deciding how to handle public release.**
 
 ## Comparisons
 
