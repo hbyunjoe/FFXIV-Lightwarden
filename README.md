@@ -72,7 +72,7 @@ Also, there's everyone's favorite modern AAA feature, SHADER COMPILATION, that g
 
 - REST and KeepUI may conflict with what Lightwarden already does. Disable/delete them before installing
 - BetterShadows conflicts with Lightwarden so disable/delete before installing.
-- Penumbra mods that replace the game's shader files (some skin, hair and body mods) can stop Lightwarden's features working on what those shaders draw. Texture and model mods are fine.
+- Mods that replace the game's shader files (some skin, hair and body mods) can stop Lightwarden's features working on what those shaders draw. Texture and model mods are fine.
 - Other HDR or tonemap mods (such as RenoDX) replace the same part of the frame. Use one or the other.
 - ReShade effects that do their own lighting from depth (GI, AO, bloom, DoF) will double up with Lightwarden's. Turn them off.
 - No idea what's up with GShade nowadays; just stick to ReShade with full add-on support.
@@ -85,14 +85,16 @@ Also, there's everyone's favorite modern AAA feature, SHADER COMPILATION, that g
 3. Install Reshade with full add-on support
 4. Copy the Reshade files (.addon64 to the root game folder [where the .exe is], and all the .fx files to your Reshade Shaders folder)
 5. Start the game and change these in-game settings:
-6. Shadow Softening must be changed to Weak or Strong, avoid Strongest (why? because while Strongest is basically PCSS, the game draws lower res shadow maps at Strongest for some reason)
-7. Set Ambient Occlusion to GTAO
-8. Enable the vanilla game's Depth of Field (don't worry the DoF won't be doubled, we need it so Lightwarden can see the game's FoV values)
+6. Shadow Softening must be changed to Weak or Strong, avoid Strongest (why? because while Strongest does use an implementation of PCSS, the game draws lower res shadow maps at Strongest for some reason)
+7. Set Ambient Occlusion to GTAO (by default Lightwarden uses the superior visibility bitmask AO but I've kept a slider to mix the game's GTAO for certain scenes, always a bad idea to mix AO though lol)
+8. Enable the vanilla game's Depth of Field (don't worry the DoF won't be doubled, we need it so Lightwarden can intercept the game's FoV values)
 10. Open Dalamud
 11. Add this Repo
 12. Restart the game
 13. reserved
 14. (Optional for HDR, DLAA, DLSS upscaling, DLSS-G, DLSS-NR): Install the Optiscaler fork
+15. reserved
+16. reserved
 
 ## Known limitations
 
