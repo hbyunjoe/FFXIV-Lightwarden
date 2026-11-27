@@ -46,6 +46,11 @@ Also, there's a lot of everyone's favorite modern AAA feature, SHADER COMPILATIO
 - ReShade with full add-on support
 - Optional, for HDR output and frame generation: OptiScaler
 
+## Conflicts
+
+- REST and KeepUI may conflict with what Lightwarden already does. Disable/delete them before installing
+- BetterShadows conflicts with Lightwarden so disable/delete before installing.
+
 ## Installation Instructions
 
 ## Known limitations
