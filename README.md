@@ -9,7 +9,7 @@ A graphics overhaul for Final Fantasy XIV. Lightwarden replaces and extends part
 - **Lighting:** softer and more accurate sun and lamp shadows, bounce light, and lamps that actually light the rooms they're in
 - **Atmosphere:** volumetric fog and light shafts, ground mist that moves round you, volumetric clouds, darker nights
 - **Water:** real reflections, waves that follow the weather and wind, wakes and ripples
-- **Characters:** better skin, eyes and hair shading, and lip sync that follows the voice lines
+- **Characters:** better skin, eyes and hair shading, foot inverse kinematics, and lip sync that follows the voice lines
 - **Weather:** its own falling snow, wet surfaces and puddles, wind through grass and trees
 - **Camera:** a film-style tonemap with HDR output, depth of field that follows the game's cutscenes, bloom, lens effects and motion blur
 - **Presets:** save, share and switch between complete looks
