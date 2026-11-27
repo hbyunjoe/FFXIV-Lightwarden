@@ -40,6 +40,20 @@ Almost every feature is its own option, so you can choose what you pay for. Pres
 
 Also, there's a lot of everyone's favorite modern AAA feature, SHADER COMPILATION, that goes on during start and baking right after loading so expect some stutters or extended black screens here and there (should usually only be once per zone load but always at startup).
 
+## Known limitations
+
+Lightwarden works inside a game that wasn't built for any of this, with real-time techniques that each have their limits. The main ones:
+
+- **Depth of field:** blurred backgrounds can show a faint halo or soft fringe around sharp subjects, most visibly round hair and at the edges of characters. This is the limit of any real-time depth of field that works from the picture; only ray-traced or path-traced depth of field avoids it. For GPose stills, the stacked depth of field gives true lens blur without it.
+- **Bounce light is mostly screen-space:** light bounces off what's on screen. Bright surfaces just out of view or behind you don't light the scene, so bounce light can change a little as you turn the camera. Lamps use their own baked bounce, which doesn't have this problem.
+- **Reflections:** screen-space reflections can only show what's on screen. Large water uses a true mirror reflection, but things the game doesn't draw (off-screen, or hidden behind other things) can still be missing; Lightwarden fills those gaps from remembered scenery, screen-space reflections and the sky.
+- **Spell effects** are flat glowing images to the game, not lights. They light their surroundings, but they don't cast proper shadows or shafts through the fog.
+- **Materials:** the game doesn't say what a surface is made of, so looks tied to a material (velvet, lacquer, brushed metal and so on) are limited.
+- **Lip sync** covers English voice lines in cutscenes, and only lines that have been baked. Creatures and other non-human faces keep the game's own mouth movement.
+- **Rooms inside bigger zones:** inn rooms and other indoor zones switch off the outdoor fog and mist, but a room that's part of a larger outdoor zone may still show some.
+- **Game patches** can break parts of Lightwarden until it's updated. A diagnostics page lists which features a patch has affected.
+- **Hardware:** developed and tested only on an NVIDIA RTX 4090. AMD and Intel cards are untested; reports are welcome.
+
 ## Requirements
 
 - Final Fantasy XIV on Windows, launched with XIVLauncher and Dalamud
