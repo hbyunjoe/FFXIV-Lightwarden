@@ -67,8 +67,9 @@ Also, there's everyone's favorite modern AAA feature, SHADER COMPILATION, that g
 3. Install Reshade with full add-on support
 4. Start the game and change these in-game settings:
 5. Open Dalamud
-6.
-7.
+6. Add this Repo
+7. reserved
+8. (Optional for HDR, DLAA, DLSS upscaling, DLSS-G, DLSS-NR): Install the Optiscaler fork
 
 ## Known limitations
 
