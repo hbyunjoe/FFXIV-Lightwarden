@@ -2,7 +2,7 @@
 
 # Lightwarden
 
-A graphics overhaul for Final Fantasy XIV. Unlike traditional ReShade shaders and presets, it doesn't just work on the final image. It replaces and extends parts of the game's own rendering pipeline to give it a more modern look, in the spirit of what ENB did for Skyrim, without replacing any of the game's textures or models.
+Originally just a study of tech art, Lightwarden is a graphics overhaul for Final Fantasy XIV. Unlike traditional ReShade shaders and presets, it doesn't just work on the final image. It replaces and extends parts of the game's own rendering pipeline to give it a more modern look, in the spirit of what ENB did for Skyrim, without replacing any of the game's textures or models.
 
 Fair warning: it requires capable hardware. For perspective, I've targeted 30 fps on an RTX 4090 at 3440×1440 with DLAA. That being said, turning off/lowering features and using things like DLSS upscaling, you can win back a some performance.
 
@@ -10,7 +10,7 @@ Fair warning: it requires capable hardware. For perspective, I've targeted 30 fp
 
 ## Comparisons
 
-Each GIF shows vanilla and Lightwarden. Lightwarden only: no post-processing or DLSS 5 NR.
+Each GIF shows vanilla and Lightwarden. Lightwarden only: no external post-processing or DLSS 5 NR.
 
 <img src="images/comparison-gridania-house.gif" alt="Vanilla and Lightwarden compared: a house in the Black Shroud" width="100%">
 
