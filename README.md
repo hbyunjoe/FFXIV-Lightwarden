@@ -14,7 +14,7 @@ Each GIF shows vanilla and Lightwarden. Lightwarden only: no post-processing or 
 
 <img src="images/comparison-gridania-house.gif" alt="Vanilla and Lightwarden compared: a house in the Black Shroud" width="100%">
 
-<img src="images/comparison-gridania-path.gif" alt="Vanilla and Lightwarden compared: a character on a forest path" width="100%">
+<img src="images/comparison-kugane-sunset.gif" alt="Vanilla and Lightwarden compared: a group of characters on a dock at sunset" width="100%">
 
 <img src="images/comparison-costa-del-sol.gif" alt="Vanilla and Lightwarden compared: a character by the sea at Costa del Sol" width="100%">
 
@@ -23,6 +23,8 @@ Each GIF shows vanilla and Lightwarden. Lightwarden only: no post-processing or 
 <img src="images/comparison-plaza-snow.gif" alt="Vanilla and Lightwarden compared: a character in a stone plaza in light snow" width="100%">
 
 <img src="images/comparison-close-up.gif" alt="Vanilla and Lightwarden compared: a character close-up" width="100%">
+
+<img src="images/comparison-interior-close-up.gif" alt="Vanilla and Lightwarden compared: a character close-up indoors by a window" width="100%">
 
 ## Key features
 
