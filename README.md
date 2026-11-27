@@ -62,7 +62,7 @@ Lightwarden works inside a game that wasn't built for any of this, with real-tim
 - **Game patches** can break parts of Lightwarden until it's updated. A diagnostics page lists which features a patch has affected.
 - **Hardware:** developed and tested only on an NVIDIA RTX 4090. AMD and Intel cards are untested.
 
-Lightwarden is a hobby project, shared as is. There's no support, and bug reports and requests may not get an answer.
+Lightwarden is a hobby project, shared as is. There'll be limited if any support, and bug reports and requests may not get an answer.
 
 ## References
 
