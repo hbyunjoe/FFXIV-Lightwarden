@@ -59,7 +59,7 @@ Lightwarden's code is its own, but it stands on published work. The main ones:
 - **Motion blur:** A Fast and Stable Feature-Aware Motion Blur Filter (Guertin et al., 2014); Next Generation Post Processing in Call of Duty: Advanced Warfare (Jimenez, 2014)
 - **Lip sync:** NVIDIA Audio2Face
 
-A full list of papers and talks, and the licence notices for third-party code, will come with the first release.
+## Licenses
 
 ## Disclaimer
 
