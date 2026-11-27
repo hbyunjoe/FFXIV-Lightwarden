@@ -61,6 +61,15 @@ Also, there's everyone's favorite modern AAA feature, SHADER COMPILATION, that g
 
 ## Installation Instructions
 
+**This assumes you have a clean install of FFXIV, please use your best judgement if you are installing on top of... whatever you have**
+1. Install the game as usual
+2. Install XIVLauncher
+3. Install Reshade with full add-on support
+4. Start the game and change these in-game settings:
+5. Open Dalamud
+6.
+7.
+
 ## Known limitations
 
 Lightwarden works inside a game that wasn't built for any of this, with real-time techniques that each have their limits. The main ones:
