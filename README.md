@@ -79,10 +79,15 @@ Lightwarden is a hobby project, shared as is. There'll be limited if any support
 
 Lightwarden's code is its own, but it stands on published work. The main ones:
 
-- **Tonemapping:** AgX (Troy Sobotka; Blender 4's version), the Gran Turismo 7 tonemapper (Polyphony Digital, 2025)
+- **Tonemapping and colour:** AgX (Troy Sobotka; Blender 4's version); the Gran Turismo 7 tonemapper (Polyphony Digital, 2025); Oklab (Ottosson, 2020)
 - **Soft shadows:** Percentage-Closer Soft Shadows (Fernando, 2005)
-- **Ambient occlusion and bounce light:** Screen Space Indirect Lighting with Visibility Bitmask (Therrien et al., 2023); Dynamic Diffuse Global Illumination (Majercik et al., 2019); ReSTIR (Bitterli et al., 2020); SVGF (Schied et al., 2017)
-- **Skin:** Burley's normalized diffusion for subsurface scattering (Burley, 2015)
+- **Ambient occlusion:** Screen Space Indirect Lighting with Visibility Bitmask (Therrien et al., 2023); Practical Real-Time Strategies for Accurate Indirect Occlusion, or GTAO (Jimenez et al., 2016); Material Advances in Call of Duty: WWII, for occlusion of direct light (Chan, 2018)
+- **Bounce light:** Dynamic Diffuse Global Illumination (Majercik et al., 2019); Scaling Probe-Based Real-Time Dynamic Global Illumination for Production (Majercik et al., 2021); ReSTIR (Bitterli et al., 2020); SVGF (Schied et al., 2017)
+- **Lamps:** Real Shading in Unreal Engine 4, for area-light highlights (Karis, 2013)
+- **Clouds:** The Real-Time Volumetric Cloudscapes of Horizon Zero Dawn (Schneider, 2015)
+- **Moving mist:** Stable Fluids (Stam, 1999)
+- **Water:** Simulating Ocean Water (Tessendorf, 2001), with the JONSWAP wave spectrum (Hasselmann et al., 1973)
+- **Skin:** Burley's normalized diffusion for subsurface scattering (Burley, 2015); the dual-lobe skin highlight as used in Unreal Engine
 - **Lens flare:** Physically-Based Real-Time Lens Flare Rendering (Hullin et al., 2011); Practical Real-Time Lens-Flare Rendering (Lee and Eisemann, 2013)
 - **Motion blur:** A Fast and Stable Feature-Aware Motion Blur Filter (Guertin et al., 2014); Next Generation Post Processing in Call of Duty: Advanced Warfare (Jimenez, 2014)
 - **Lip sync:** NVIDIA Audio2Face
