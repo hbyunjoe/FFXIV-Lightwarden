@@ -31,6 +31,12 @@ These finish the picture the way a camera would: exposure and tonemapping, bloom
 
 The plugin holds every setting for the other two parts, and the presets. It also reads what the game is doing (the camera, the weather, the time of day, the zone, where lights and characters are) and passes that along, so the lighting and atmosphere follow the game rather than guess from the picture. A few features live entirely in the plugin because they aren't rendering at all: lip sync, foot inverse kinematics, the autofocus, and scanning a zone's lamps and scenery so their light and shadows can be worked out ahead of time.
 
+## Performance
+
+Lightwarden is a heavy graphics mod. It adds a lot of rendering work on top of the game, and it was built and tuned on an RTX 4090 at 3440×1440. Expect a real cost to your frame rate, more so in busy cities and at night among many lamps.
+
+Almost every feature is its own option, so you can choose what you pay for. Presets make that easier: a preset is one small file holding a complete setup, and Lightwarden ships with a default preset and a lighter one. Presets can be shared, so people with similar hardware can trade settings that suit it, and switching between them takes one click.
+
 ## Requirements (planned)
 
 - Final Fantasy XIV on Windows, launched with XIVLauncher and Dalamud
