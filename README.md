@@ -38,7 +38,7 @@ The plugin holds every setting for the other two parts, and the presets. It also
 
 Install instructions will be added with the first release.
 
-## Techniques and references
+## References
 
 Lightwarden's code is its own, but it stands on published work. The main ones:
 
