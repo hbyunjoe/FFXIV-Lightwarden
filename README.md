@@ -70,7 +70,7 @@ Lightwarden works inside a game that wasn't built for any of this, with real-tim
 - **Materials:** the game doesn't say what a surface is made of, so looks tied to a material (velvet, lacquer, brushed metal and so on) are limited.
 - **Lip sync** covers English voice lines in cutscenes, and only lines that have been baked. Creatures and other non-human faces keep the game's own mouth movement.
 - **Rooms inside bigger zones:** inn rooms and other indoor zones switch off the outdoor fog and mist, but a room that's part of a larger outdoor zone may still show some.
-- **Game patches** can break parts of Lightwarden until it's updated. A diagnostics page lists which features a patch has affected.
+- **Game patches** can break parts of Lightwarden until it's updated.
 - **Hardware:** developed and tested only on an NVIDIA RTX 4090. AMD and Intel cards are untested.
 
 Lightwarden is a hobby project, shared as is. There'll be limited if any support, and bug reports and requests may not get an answer.
