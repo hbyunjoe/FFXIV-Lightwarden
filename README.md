@@ -121,7 +121,7 @@ Lightwarden includes or is based on the following third-party work. Their licenc
 
 Lightwarden's code was written with the help of AI (Anthropic's Claude). The look, the design decisions, the testing and every judgement about what stays and what goes are mine. No AI-generated art is used anywhere: the banner, screenshots and videos are made by me from the game itself.
 
-The one feature that uses a machine-learning model at runtime is lip sync, which works out mouth movement from the game's voice lines with NVIDIA Audio2Face. It animates the game's existing faces; it doesn't create any images.
+The one feature built on a machine-learning model is lip sync: NVIDIA Audio2Face works out mouth movement from the game's voice lines ahead of time, and Lightwarden plays it back on the game's existing faces. It doesn't create any images.
 
 ## Disclaimer
 
