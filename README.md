@@ -9,9 +9,10 @@ A graphics overhaul for Final Fantasy XIV. Lightwarden replaces and extends part
 - **Lighting:** soft sun and lamp shadows that sharpen near contact (PCSS, contact shadows), ambient occlusion (visibility bitmask), bounce light (screen-space global illumination with probe-based lamp bounce), and lamps that actually light the rooms they're in (baked shadows for every lamp, light from glowing scenery)
 - **Atmosphere:** volumetric fog and light shafts (froxel-based), ground mist that moves round you, volumetric clouds, dust motes in the light, darker nights
 - **Water:** planar and screen-space reflections, waves that follow the weather and wind, wakes, ripples and caustics
-- **Characters:** skin with subsurface scattering (Burley diffusion) and light through thin parts like ears, eye shading, softer hair shadows, foot inverse kinematics, and lip sync that follows the voice lines (baked with NVIDIA Audio2Face)
+- **Characters:** skin with subsurface scattering (Burley diffusion) and light through thin parts like ears, eye shading, softer hair shadows, foot inverse kinematics, and lip sync: mouths that follow the actual voice lines in cutscenes, worked out from the audio with NVIDIA Audio2Face (English voices)
 - **Weather:** its own falling snow, wet surfaces and puddles, snow on surfaces, wind through grass and trees
-- **Camera:** a choice of tonemappers (AgX, GT7, an ACES fit, film LUTs) with auto exposure and HDR10 output, a physically based lens flare that follows the aperture, depth of field that follows the game's cutscenes, bloom, halation, diffusion, chromatic aberration, lens dirt, film grain and motion blur
+- **Camera:** a choice of tonemappers (AgX, GT7, an ACES fit, film LUTs) with auto exposure and HDR10 output, a physically based lens flare that follows the aperture, bloom, halation, diffusion, chromatic aberration, lens dirt, film grain and motion blur
+- **Depth of field and autofocus:** a cinematic autofocus for cutscenes that finds every face in the shot, focuses on the speaker's eye, follows over-the-shoulder shots and the cutscene's own focus pulls, picks an aperture for each shot and racks focus smoothly at cuts. In GPose, click anywhere on the picture to focus there, or take a stacked depth-of-field still: true lens blur built up from many frames
 - **A clean UI:** every effect is drawn before the game's interface, so the HUD, chat and nameplates stay sharp and untouched. No extra UI-masking add-on or shader (such as REST or KeepUI) is needed
 - **Presets:** save, share and switch between complete looks
 
