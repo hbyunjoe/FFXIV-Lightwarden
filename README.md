@@ -14,13 +14,21 @@ A graphics overhaul for Final Fantasy XIV. Lightwarden replaces and extends part
 - **Camera:** a choice of tonemappers (AgX, GT7, an ACES fit, film LUTs) with auto exposure and HDR10 output, a physically based lens flare that follows the aperture, depth of field that follows the game's cutscenes, bloom, halation, diffusion, chromatic aberration, lens dirt, film grain and motion blur
 - **Presets:** save, share and switch between complete looks
 
-## How it's built
+## How it works
 
-Lightwarden has three parts that work together:
+Lightwarden has three parts. Each does a different job, and they talk to each other while the game runs.
 
-1. **A ReShade add-on:** the engine. It changes how the game draws the world.
-2. **ReShade effects:** the camera and film: tonemap, bloom, colour grade, lens and depth of field.
-3. **A Dalamud plugin:** the control panel. It holds every setting and tells the other two what is happening in the game.
+### 1. The ReShade add-on: the engine
+
+This is where most of the work happens. The add-on sits inside the game's drawing and watches every step of a frame as the game builds it. It recognises the game's own rendering passes, and then either swaps in Lightwarden's version or adds new passes of its own. The shadows, ambient occlusion, bounce light, fog, clouds, water, skin and falling snow are all drawn here, in the middle of the frame, with the same information the game itself has: depth, surface direction, materials and the scene's real light values. That is the difference from an ordinary ReShade preset, which can only work on the finished picture.
+
+### 2. The ReShade effects: the camera and film
+
+These finish the picture the way a camera would: exposure and tonemapping, bloom, lens flare, depth of field, motion blur, colour grading, halation and grain. Lightwarden's tonemapper replaces the game's own, and the add-on runs several of these effects before it, on the scene's true brightness rather than on an already-flattened image. Bright things then bloom, flare and blur the way they would through a real lens.
+
+### 3. The Dalamud plugin: the control panel and the eyes on the game
+
+The plugin holds every setting for the other two parts, and the presets. It also reads what the game is doing (the camera, the weather, the time of day, the zone, where lights and characters are) and passes that along, so the lighting and atmosphere follow the game rather than guess from the picture. A few features live entirely in the plugin because they aren't rendering at all: lip sync, foot inverse kinematics, the autofocus, and scanning a zone's lamps and scenery so their light and shadows can be worked out ahead of time.
 
 ## Requirements (planned)
 
