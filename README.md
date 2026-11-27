@@ -4,7 +4,7 @@ A graphics overhaul for Final Fantasy XIV. Lightwarden replaces and extends part
 
 **Status: in development.**
 
-## What it does
+## Key features
 
 - **Lighting:** soft sun and lamp shadows that sharpen near contact (PCSS, contact shadows), ambient occlusion (visibility bitmask), bounce light (screen-space global illumination with probe-based lamp bounce), and lamps that actually light the rooms they're in (baked shadows for every lamp, light from glowing scenery)
 - **Atmosphere:** volumetric fog and light shafts (froxel-based), ground mist that moves round you, volumetric clouds, dust motes in the light, darker nights
@@ -21,7 +21,7 @@ Lightwarden has three parts. Each does a different job, and they talk to each ot
 
 ### 1. The ReShade add-on: the engine
 
-This is where most of the work happens. The add-on sits inside the game's drawing and watches every step of a frame as the game builds it. It recognises the game's own rendering passes, and then either swaps in Lightwarden's version or adds new passes of its own. The shadows, ambient occlusion, bounce light, fog, clouds, water, skin and falling snow are all drawn here, in the middle of the frame, with the same information the game itself has: depth, surface direction, materials and the scene's real light values. A bit further than a ReShade preset, which usually only work on the finished image.
+The add-on sits inside the game's drawing and watches every step of a frame as the game builds it. It recognises the game's own rendering passes, and then either swaps in Lightwarden's version or adds new passes of its own. The shadows, ambient occlusion, bounce light, fog, clouds, water, skin and falling snow are all drawn here, in the middle of the frame, with the same information the game itself has: depth, surface direction, materials and the scene's real light values. A bit further than a ReShade preset, which usually only work on the finished image.
 
 ### 2. The ReShade effects: the camera and film
 
@@ -33,17 +33,19 @@ The plugin holds every setting for the other two parts, and the presets. It also
 
 ## Performance
 
-Lightwarden is a heavy graphics mod. It adds a lot of rendering work on top of the game, and it was built and tuned on an RTX 4090 at 3440×1440. Expect a real cost to your frame rate, more so in busy cities and at night among many lamps.
+Lightwarden is a heavy graphics mod. It adds a lot of rendering work on top of the game, and it was built and tuned on an RTX 4090 at 3440×1440 with a goal of 30 fps (FFXIV is my GTA VI). Expect a real cost to your frame rate, more so in busy cities (yes, Limsa AFKers render at beautiful 25fps) and other heavy scenes.
 
 Almost every feature is its own option, so you can choose what you pay for. Presets make that easier: a preset is one small file holding a complete setup, and Lightwarden ships with a default preset and a lighter one. Presets can be shared, so people with similar hardware can trade settings that suit it, and switching between them takes one click.
 
-## Requirements (planned)
+Also, there's a lot of everyone's favorite modern AAA feature, SHADER COMPILATION, that goes on during start and baking right after loading so expect some stutters or extended black screens here and there (should usually only be once per zone load but always at startup).
+
+## Requirements
 
 - Final Fantasy XIV on Windows, launched with XIVLauncher and Dalamud
 - ReShade with full add-on support
 - Optional, for HDR output and frame generation: OptiScaler
 
-Install instructions will be added with the first release.
+## Installation Instructions
 
 ## References
 
