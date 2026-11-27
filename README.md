@@ -92,6 +92,22 @@ Lightwarden's code is its own, but it stands on published work. The main ones:
 - **Motion blur:** A Fast and Stable Feature-Aware Motion Blur Filter (Guertin et al., 2014); Next Generation Post Processing in Call of Duty: Advanced Warfare (Jimenez, 2014)
 - **Lip sync:** NVIDIA Audio2Face
 
+## Acknowledgements
+
+Lightwarden wouldn't exist without the people who inspired it:
+
+- **Boris Vorontsov**, creator of ENBSeries, which I've used across GTA, Skyrim, Fallout and more, for showing the world what's possible.
+- **l00ping**, for Natural and Atmospheric Tamriel (NAT and NAT.ENB).
+- **NovaKDalton and JawZ**, for Relighting Skyrim.
+- **[SirenBrink](https://github.com/SirenBrink)** (a.k.a. Nickle), whose DLSS and OptiScaler work for FFXIV inspired me and got me to finish this project, and whose FFXIV-NativeDoF showed how to read the game's depth of field.
+- **The creators of Octane Render and Blender**, for starting me on this journey by making fast, GPU-accelerated rendering available to everyone.
+- **Marty McFly**, for constantly pushing the boundaries of screen-space ReShade techniques.
+- **Alexander Sannikov**, for his enthusiasm and knowledge.
+- **Thomas Harle** (tharlevfx), for his YouTube videos.
+- **[Daniel Ilett](https://www.youtube.com/@danielilett)**, for his YouTube videos.
+- **Elliott McSherry** (EMC3D), for his YouTube videos.
+- **[David O'Reilly](https://www.davidoreillygameart.com/)** (Game World Art), for his YouTube videos.
+
 ## Licenses
 
 ## Disclaimer
