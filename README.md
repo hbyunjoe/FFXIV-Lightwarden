@@ -36,11 +36,11 @@ The plugin holds every setting for the other two parts, and the presets. It also
 
 ## Performance
 
-Lightwarden is a heavy graphics mod. It adds a lot of rendering work on top of the game, and it was built and tuned on an RTX 4090 at 3440×1440 with a goal of 30 fps (FFXIV is my GTA VI). Expect a real cost to your frame rate, more so in busy cities (yes, Limsa AFKers render at beautiful 25fps) and other heavy scenes.
+As I've mentioned above, Lightwarden is a heavy graphics mod. It adds a lot of rendering work on top of the game, and it was built and tuned on an RTX 4090 at 3440×1440 with a goal of 30 fps (FFXIV is my GTA VI). Expect a real cost to your frame rate, more so in busy cities (yes, Limsa AFKers render at beautiful 25fps) and other heavy scenes.
 
 Almost every feature is its own option, so you can choose what you pay for. Presets make that easier: a preset is one small file holding a complete setup, and Lightwarden ships with a default preset and a lighter one. Presets can be shared, so people with similar hardware can trade settings that suit it, and switching between them takes one click.
 
-Also, there's a lot of everyone's favorite modern AAA feature, SHADER COMPILATION, that goes on during start and baking right after loading so expect some stutters or extended black screens here and there (should usually only be once per zone load but always at startup).
+Also, there's everyone's favorite modern AAA feature, SHADER COMPILATION, that goes on during game startup and baking right after loading zones so expect some stutters or extended black screens here and there (should usually only be once per zone load but always at startup).
 
 ## Requirements
 
