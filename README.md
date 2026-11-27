@@ -82,7 +82,7 @@ Lightwarden works inside a game that wasn't built for any of this, with real-tim
 - **Lip sync** covers English voice lines in cutscenes, and only lines that have been baked. Creatures and other non-human faces keep the game's own mouth movement.
 - **Rooms inside bigger zones:** inn rooms and other indoor zones switch off the outdoor fog and mist, but a room that's part of a larger outdoor zone may still show some.
 - **Game patches** can break parts of Lightwarden until it's updated.
-- **Hardware:** developed and tested only on an NVIDIA RTX 4090. AMD and Intel cards are untested.
+- **Hardware:** developed and tested only on an nVidia RTX 4090. All other cards, nVidia or otherwise are untested.
 
 Lightwarden is a hobby project, shared as is. There'll be limited if any support, and bug reports and requests may not get an answer.
 
@@ -101,7 +101,7 @@ Lightwarden's code is its own, but it stands on published work. The main ones:
 - **Skin:** Burley's normalized diffusion for subsurface scattering (Burley, 2015); the dual-lobe skin highlight as used in Unreal Engine
 - **Lens flare:** Physically-Based Real-Time Lens Flare Rendering (Hullin et al., 2011); Practical Real-Time Lens-Flare Rendering (Lee and Eisemann, 2013)
 - **Motion blur:** A Fast and Stable Feature-Aware Motion Blur Filter (Guertin et al., 2014); Next Generation Post Processing in Call of Duty: Advanced Warfare (Jimenez, 2014)
-- **Lip sync:** NVIDIA Audio2Face
+- **Lip sync:** nVidia Audio2Face
 
 ## Acknowledgements
 
@@ -130,7 +130,7 @@ Lightwarden includes or is based on the following third-party work. Their licenc
 
 Lightwarden's code was written with the help of AI (Anthropic's Claude). The look, the design decisions, the testing and every judgement about what stays and what goes are mine. No AI-generated art is used anywhere.
 
-The one feature built on a machine-learning model is lip sync: NVIDIA Audio2Face works out mouth movement from the game's voice lines ahead of time, and Lightwarden plays it back on the game's existing faces' bones. It doesn't create any images.
+The one feature built on a machine-learning model is lip sync: nVidia Audio2Face works out mouth movement from the game's voice lines ahead of time, and Lightwarden plays it back on the game's existing faces' bones. It doesn't create any images.
 
 ## Disclaimer
 
