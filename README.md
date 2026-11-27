@@ -108,6 +108,13 @@ Lightwarden's code is its own, but it stands on published work. The main ones:
 
 ## Licenses
 
+Lightwarden includes or is based on the following third-party work. Their licence notices are in the [licenses](licenses) folder and ship with every release:
+
+- **ReShade's add-on headers** (Patrick Mours): BSD 3-Clause. [Notice](licenses/THIRD-PARTY-LICENSE-ReShade.md)
+- **The Gran Turismo 7 tonemapper**, after Polyphony Digital's reference code (2025): MIT. [Notice](licenses/THIRD-PARTY-LICENSE-GT7.txt)
+- **FAST noise textures** (EA SEED, Electronic Arts): BSD 3-Clause. [Notice](licenses/THIRD-PARTY-LICENSE-FastNoise.txt)
+- **FFXIV-NativeDoF** (SirenBrink), whose memory layout Lightwarden uses to read the game's depth of field: MIT. [Notice](licenses/THIRD-PARTY-LICENSE-NativeDoF.txt)
+
 ## Disclaimer
 
 Lightwarden is an unofficial, fan-made project. It is not affiliated with or endorsed by Square Enix. Third-party tools are against the game's terms of service; use it at your own risk. It changes only how the game looks on your own screen.
