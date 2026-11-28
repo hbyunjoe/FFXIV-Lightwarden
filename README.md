@@ -60,6 +60,8 @@ For the full step-by-step guide, with pictures and the optional OptiScaler setup
 
 Lightwarden has three parts. Each does a different job, and they talk to each other while the game runs.
 
+<img src="images/how-it-works.svg" alt="One frame, start to finish: the game draws the world; the ReShade add-on replaces the lighting and adds atmosphere and water; the ReShade effects add the camera effects and the tonemap; the game draws its UI on top; the Dalamud plugin feeds them all." width="100%">
+
 ### 1. The ReShade add-on: the engine
 
 The add-on sits inside the game's drawing and watches every step of a frame as the game builds it. It recognises the game's own rendering passes, and then either swaps in Lightwarden's version or adds new passes of its own. The shadows, ambient occlusion, bounce light, fog, clouds, water, skin and falling snow are all drawn here, in the middle of the frame, with the same information the game itself has: depth, surface direction, materials and the scene's real light values. A bit further than a ReShade preset, which usually only work on the finished image.
