@@ -8,23 +8,22 @@ Fair warning: it requires capable hardware. For perspective, I've targeted 30 fp
 
 **Status: 90%; feature complete, fixing visual bugs, and deciding how to handle public release.**
 
-## Comparisons
-
-Each GIF shows vanilla and Lightwarden. Lightwarden only: no external post-processing or DLSS 5 NR.
-
-<img src="images/comparison-gridania-house.gif" alt="Vanilla and Lightwarden compared: a house in the Black Shroud" width="100%">
-
-<img src="images/comparison-kugane-sunset.gif" alt="Vanilla and Lightwarden compared: a group of characters on a dock at sunset" width="100%">
+<p align="center"><a href="#quick-start">Quick start</a> · <a href="INSTALL.md">Full installation guide</a> · <a href="#key-features">Key features</a> · <a href="#more-comparisons">Comparisons</a> · <a href="#known-limitations">Known limitations</a></p>
 
 <img src="images/comparison-costa-del-sol.gif" alt="Vanilla and Lightwarden compared: a character by the sea at Costa del Sol" width="100%">
 
-<img src="images/comparison-night-street.gif" alt="Vanilla and Lightwarden compared: a city street at night lit by lanterns" width="100%">
+<p align="center"><sub>Vanilla and Lightwarden. Lightwarden only: no external post-processing or DLSS 5 NR.</sub></p>
 
-<img src="images/comparison-plaza-snow.gif" alt="Vanilla and Lightwarden compared: a character in a stone plaza in light snow" width="100%">
+## Quick start
 
-<img src="images/comparison-close-up.gif" alt="Vanilla and Lightwarden compared: a character close-up" width="100%">
+1. Check the [requirements](#requirements) and [conflicts](#conflicts) first.
+2. Install [XIVLauncher](https://goatcorp.github.io/) (with Dalamud) and ReShade with full add-on support, for `ffxiv_dx11.exe`.
+3. Copy `Lightwarden.addon64` next to `ffxiv_dx11.exe`, and the `.fx` files into ReShade's `reshade-shaders\Shaders` folder.
+4. In the game's graphics settings: Shadow Softening on **Weak** or **Strong**, Ambient Occlusion on **GTAO**, and Depth of Field **on**.
+5. In Dalamud, add the Lightwarden repository and install the plugin.
+6. Restart the game.
 
-<img src="images/comparison-interior-close-up.gif" alt="Vanilla and Lightwarden compared: a character close-up indoors by a window" width="100%">
+For the full step-by-step guide, with pictures and the optional OptiScaler setup for HDR, DLSS and frame generation, see **[INSTALL.md](INSTALL.md)**.
 
 ## Key features
 
@@ -37,6 +36,25 @@ Each GIF shows vanilla and Lightwarden. Lightwarden only: no external post-proce
 - **Depth of field and autofocus:** a cinematic autofocus for cutscenes that finds every face in the shot, focuses on the speaker's eye, follows over-the-shoulder shots and the cutscene's own focus pulls, picks an aperture for each shot and racks focus smoothly at cuts. In GPose, click anywhere on the picture to focus there, and/or take a stacked depth-of-field still: accumulation DoF
 - **A clean UI:** every effect is drawn before the game's interface, so the HUD, chat and nameplates stay sharp and untouched. No extra UI-masking add-on or shader is needed (such as REST or KeepUI).
 - **Presets:** save, share and switch between complete looks
+
+## More comparisons
+
+<details>
+<summary><b>Show more comparisons</b> (about 50 MB of GIFs)</summary>
+
+<img src="images/comparison-gridania-house.gif" alt="Vanilla and Lightwarden compared: a house in the Black Shroud" width="100%" loading="lazy">
+
+<img src="images/comparison-kugane-sunset.gif" alt="Vanilla and Lightwarden compared: a group of characters on a dock at sunset" width="100%" loading="lazy">
+
+<img src="images/comparison-night-street.gif" alt="Vanilla and Lightwarden compared: a city street at night lit by lanterns" width="100%" loading="lazy">
+
+<img src="images/comparison-plaza-snow.gif" alt="Vanilla and Lightwarden compared: a character in a stone plaza in light snow" width="100%" loading="lazy">
+
+<img src="images/comparison-close-up.gif" alt="Vanilla and Lightwarden compared: a character close-up" width="100%" loading="lazy">
+
+<img src="images/comparison-interior-close-up.gif" alt="Vanilla and Lightwarden compared: a character close-up indoors by a window" width="100%" loading="lazy">
+
+</details>
 
 ## How it works
 
@@ -76,25 +94,6 @@ Also, there's everyone's favorite modern AAA feature, SHADER COMPILATION, that g
 - Other HDR or tonemap mods (such as RenoDX) replace the same part of the frame. Use one or the other.
 - ReShade effects that do their own lighting from depth (GI, AO, bloom, DoF) will double up with Lightwarden's. Turn them off.
 - No idea what's up with GShade nowadays; just stick to ReShade with full add-on support.
-
-## Installation Instructions
-
-**This assumes you have a clean install of FFXIV, please use your best judgement if you are installing on top of... whatever you have**
-1. Install the game as usual
-2. Install XIVLauncher
-3. Install Reshade with full add-on support
-4. Copy the Reshade files (.addon64 to the root game folder [where the .exe is], and all the .fx files to your Reshade Shaders folder)
-5. Start the game and change these in-game settings:
-6. Shadow Softening must be changed to Weak or Strong, avoid Strongest (why? because while Strongest does use an implementation of PCSS, the game draws lower res shadow maps at Strongest for some reason)
-7. Set Ambient Occlusion to GTAO (by default Lightwarden uses the superior visibility bitmask AO but I've kept a slider to mix the game's GTAO for certain scenes, always a bad idea to mix AO though lol)
-8. Enable the vanilla game's Depth of Field (don't worry the DoF won't be doubled, we need it so Lightwarden can intercept the game's FoV values)
-10. Open Dalamud
-11. Add this Repo
-12. Restart the game
-13. reserved
-14. (Optional for HDR, DLAA, DLSS upscaling, DLSS-G, DLSS-NR): Install the Optiscaler fork
-15. reserved
-16. reserved
 
 ## Known limitations
 
