@@ -58,6 +58,8 @@ For the full step-by-step guide, with pictures and the optional OptiScaler setup
 
 ## How it works
 
+<img src="images/how-it-works-buffers.jpg" alt="One frame from a Lightwarden capture, cut into slanted strips: sun shadows, ambient occlusion, depth, albedo, normals and the final image" width="100%">
+
 Lightwarden has three parts. Each does a different job, and they talk to each other while the game runs.
 
 <img src="images/how-it-works.svg" alt="One frame, start to finish: the game draws the world; the ReShade add-on replaces the lighting and adds atmosphere and water; the ReShade effects add the camera effects and the tonemap; the game draws its UI on top; the Dalamud plugin feeds them all." width="100%">
