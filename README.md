@@ -31,7 +31,7 @@ Each GIF shows vanilla and Lightwarden. Lightwarden only: no external post-proce
 - **Lighting:** soft sun and lamp shadows that sharpen near contact (PCSS, contact shadows), ambient occlusion (visibility bitmask), bounce light (screen-space global illumination with probe-based lamp bounce), and lamps that actually light the rooms they're in (baked shadows for every lamp, light from glowing scenery)
 - **Atmosphere:** volumetric fog and light shafts (froxel-based), ground mist that reacts, volumetric clouds, particle effects such as dirt, dust motes in the light, darker nights
 - **Water:** hybrid planar and screen-space reflections, waves that follow the weather and wind, wakes, ripples and caustics
-- **Characters:** old gear with metallic parts (Phong) get a simulacrum to the Dawntrail (GGX) metal shader and both are enhanced with screen space reflections, skin with subsurface scattering (Burley diffusion) and light through thin parts like ears, eye shading, softer hair shadows, foot inverse kinematics, and lip sync: mouths that follow the actual voice lines in cutscenes, worked out from the audio with NVIDIA Audio2Face (English voices)
+- **Characters:** old gear with metallic parts (Phong) get a simulacrum to the Dawntrail (GGX) metal shader and both are enhanced with screen space reflections, skin with subsurface scattering (Burley diffusion) and light through thin parts like ears, eye shading, softer hair shadows, and foot inverse kinematics.
 - **Weather:** its own falling snow, wet surfaces and puddles, snow on surfaces, wind through grass and trees
 - **Camera:** a choice of tonemappers (AgX, GT7, an ACES fit, film LUTs) with auto exposure and HDR10 output, a physically based lens flare that follows the aperture, bloom, halation, diffusion, chromatic aberration, lens dirt, film grain and motion blur
 - **Depth of field and autofocus:** a cinematic autofocus for cutscenes that finds every face in the shot, focuses on the speaker's eye, follows over-the-shoulder shots and the cutscene's own focus pulls, picks an aperture for each shot and racks focus smoothly at cuts. In GPose, click anywhere on the picture to focus there, and/or take a stacked depth-of-field still: accumulation DoF
@@ -107,7 +107,6 @@ Lightwarden works inside a game that wasn't built for any of this, with real-tim
 - **Reflections:** screen-space reflections can only show what's on screen. Large water uses a true mirror reflection, but things the game doesn't draw (off-screen, or hidden behind other things) can still be missing and flicker; Lightwarden does its best to fill those gaps from remembered scenery, screen-space reflections and the sky.
 - **Spell effects** are flat glowing images to the game, not lights. They light their surroundings, but they don't cast proper shadows or shafts through the fog.
 - **Materials:** the game doesn't say what a surface is made of, so looks tied to a material (velvet, lacquer, brushed metal and so on) are limited.
-- **Lip sync** covers English voice lines in cutscenes, and only lines that have been baked. Creatures and other non-human faces keep the game's own mouth movement.
 - **Rooms inside bigger zones:** inn rooms and other indoor zones switch off the outdoor fog and mist, but a room that's part of a larger outdoor zone may still show some.
 - **Game patches** can break parts of Lightwarden until it's updated.
 - **Hardware:** developed and tested only on an nVidia RTX 4090. All other cards, nVidia or otherwise are untested.
@@ -127,7 +126,6 @@ Lightwarden's code is its own, but it stands on published work. The main ones:
 - **Skin:** Burley's normalized diffusion for subsurface scattering (Burley, 2015); the dual-lobe skin highlight as used in Unreal Engine
 - **Lens flare:** Physically-Based Real-Time Lens Flare Rendering (Hullin et al., 2011); Practical Real-Time Lens-Flare Rendering (Lee and Eisemann, 2013)
 - **Motion blur:** A Fast and Stable Feature-Aware Motion Blur Filter (Guertin et al., 2014); Next Generation Post Processing in Call of Duty: Advanced Warfare (Jimenez, 2014)
-- **Lip sync:** nVidia Audio2Face
 
 ## Acknowledgements
 
@@ -155,8 +153,6 @@ Lightwarden includes or is based on the following third-party work. Their licenc
 ## AI disclosure
 
 Lightwarden's code was written with the help of AI (Anthropic's Claude). The look, the design decisions, the testing and every judgement about what stays and what goes are mine. No AI-generated art is used anywhere.
-
-The one feature built on a machine-learning model is lip sync: nVidia Audio2Face works out mouth movement from the game's voice lines ahead of time, and Lightwarden plays it back on the game's existing faces' bones. It doesn't create any images.
 
 ## Disclaimer
 
